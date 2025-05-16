@@ -1,0 +1,57 @@
+.serviceGuide section {
+    background: linear-gradient(0deg, rgb(144, 147, 247), rgb(128, 255, 247));
+    padding: 25px;
+    font-family: Poppins;
+    scroll-margin-top: 56px;
+}
+
+.serviceGuide section header {
+    font-size: 18pt;
+    color: palevioletred;
+    font-weight: bold;
+}
+
+.serviceGuide section p {
+    font-weight: 500;
+}
+
+.serviceGuide section:nth-child(2) {
+    background: linear-gradient(282deg, rgb(8, 255, 189), rgb(255, 255, 255));
+}
+
+.serviceGuide section#contents li {
+    padding: 3px 0;
+}
+
+.serviceGuide section#contents ul > li {
+    font-size: 17pt;
+}
+
+.serviceGuide section a {
+    text-decoration: none;
+}
+
+ul {
+    color: #10376e;
+}
+
+li::marker {
+    font-family: monospace;
+}
+
+#worker-finder > ol > li {
+    color: #000;
+    border-radius: 5px;
+    background: hsla(0, 0%, 100%, 0.2);
+    padding: 5px;
+}
+
+.detailed-guide {
+    background: linear-gradient(282deg, #ff6e7f, #bfe9ff);
+}
+
+.detailed-guide li {
+    font-size: 17pt;
+    font-weight: bold;
+    color: purple;
+}

@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+.tilesCalculator {
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tilesCalculator .image-cover {
+    background: #851d28;
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tilesCalculatorimg {
+    width: 40vw;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .tilesCalculator img {
+        width: 70vw;
+    }
+}
+
+.tilesCalculator .container {
+    width: 100%;
+    padding: 30px;
+}
+.tilesCalculator h1 {
+    text-align: center;
+    color: #333;
+}
+
+.tilesCalculator label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.tilesCalculator :is(input, select, button) {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #bbb;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.tilesCalculator :is(input,select) {
+    background: #fff;
+    color: #000;
+}
+.tilesCalculator select {
+    font-weight: bold;
+}
+
+.tilesCalculator button {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.tilesCalculator button:hover {
+    background-color: #45a049;
+}
+
+.tilesCalculator .result {
+    background: #deffce;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.tilesCalculator table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tilesCalculator :is(table, td, th) {
+    border: 1px solid #eee;
+    padding: 8px;
+}
+
+.tilesCalculator table th {
+    text-align: left;
+    width: 50%;
+    font-size: 15pt;
+    color: #497ccc;
+}
+
+.tilesCalculator table td {
+    font-size: 14pt;
+    font-weight: 500;
+}
+
+.tilesCalculator input[type="number"]:invalid {
+    border-color: orangered;
+}
+
+.tilesCalculator input[type="number"]:focus {
+    border-color: #4caf50;
+}
+
+.tilesCalculator select:focus {
+    border-color: #4caf50;
+}

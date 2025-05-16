@@ -1,0 +1,51 @@
+.menu-content {
+  height: 0px;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: linear-gradient(to bottom, lightblue, dodgerblue);
+  color: #000;
+  font-family: "Carter One", serif;
+  padding: 0 30px;
+  overflow: hidden;
+  transition: height .3s ease-in-out, padding .2s ease;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.menu-content.opened {
+  height: 300px;
+  padding: 30px;
+  padding-top: 80px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 5px;
+  padding-left: 10px;
+  color: #000;
+}
+
+.menu-item:hover {
+  background: hsla(0, 0%, 100%, 0.76);
+  border-radius: 15px;
+  color: hsla(223, 63%, 47%, 1)
+}
+
+.menu-content .selected {
+  background: hsla(0, 0%, 100%, 0.76);
+  border-radius: 15px;
+  color: hsla(223, 63%, 47%, 1)
+}
+
+
+.menu-item .icon {
+  width: 24px;
+  height: 24px;
+}
