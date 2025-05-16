@@ -13,7 +13,7 @@ import ShopTogether from './pages/ShopTogether/ShopTogether';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/baatdekha">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
