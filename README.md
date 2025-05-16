@@ -1,12 +1,31 @@
-# React + Vite
+# What is Baatdekha?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Baatdekha is a name of our local language, Sambalpuri.
 
-Currently, two official plugins are available:
+It has 3 different types of meaning.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. When you show a way to another, that's called baatdekha.
+2. When your relatives, friends, or any guests come to your home, they have to give you some surprise, like any type of gift or sweets or any more—that's also called baatdekha.
+3. Suppose you have a plan to go to your relative's house or any of your friend’s houses, and they already know about that, and they are waiting for you—that is called baatdekha.
 
-## Expanding the ESLint configuration
+In this platform it means the 1st option. That is, we are providing some digital services through our website that can help people.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Services
+We offer a wide range of services to the local villages on this platform, some of which are open to all users.
+
+1. All user services.
+    1. Home Estimators
+    2. Shop Together
+2. Our local user services.
+    1. Workers Finder
+    2. Vehicle Reservation
+
+We are always trying to find some basic types of services related to our everyday life. It can benefit a lot of individuals.
+
+**Why use baatdekha.com?**
+
+- Easy to use.
+- User-friendly.
+- Up-to-date service.
+- Privacy protection.
+- Neat & clean interface.
