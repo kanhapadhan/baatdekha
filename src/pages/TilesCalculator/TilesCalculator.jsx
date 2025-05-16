@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './tilesCalculator.css'; // Move your CSS into this file
+import tilesCalculatorBanner from './tiles.jpg'
 
 export default function TilesCalculator() {
   const [length, setLength] = useState('');
