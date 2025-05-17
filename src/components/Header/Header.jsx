@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import banner from './baatdekha.png'
 import './header.css'
 
-function Header({ isMenuOpen, setIsMenuOpen, buttonRef }) {
+function Header({ isMenuOpen, setIsMenuOpen }) {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -22,7 +22,6 @@ function Header({ isMenuOpen, setIsMenuOpen, buttonRef }) {
     <div className={`header-container ${scrolled ? 'scrolled' : ''}`}>
       <header>
         <button
-          ref={buttonRef}
           aria-label="Toggle menu"
           aria-expanded={isMenuOpen}
           className={`menu-button ${isMenuOpen ? 'menu-open' : ''}`}
