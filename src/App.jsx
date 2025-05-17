@@ -5,7 +5,8 @@ import Home from './pages/Home/Home';
 import ContactUs from './pages/ContactUs/ContactUs';
 import AboutUs from './pages/AboutUs/AboutUs';
 import ServiceGuide from './pages/ServiceGuide/ServiceGuide';
-import WorkersFinder from './pages/WorkersFinder/WorkersFinder';
+import WorkersApp from './pages/WorkersApp/WorkersApp';
+import WorkersFinder from './pages/WorkersApp/WorkersFinder/WorkersFinder';
 import TilesCalculator from './pages/TilesCalculator/TilesCalculator';
 import PaintsMaker from './pages/PaintsMaker/PaintsMaker';
 import Tnc from './pages/Tnc/Tnc';
@@ -21,6 +22,7 @@ function App() {
           <Route path="service-guide" element={<ServiceGuide />} />
           <Route path="contact" element={<ContactUs />} />
           <Route path="terms" element={<Tnc />} />
+          <Route path="workers-app" element={<WorkersApp />} />
           <Route path="workers-finder" element={<WorkersFinder />} />
           <Route path="shop-together" element={<ShopTogether />} />
         </Route>

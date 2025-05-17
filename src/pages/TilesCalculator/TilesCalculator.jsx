@@ -34,10 +34,10 @@ export default function TilesCalculator() {
   return (
     <div className="tilesCalculator">
       <div className="image-cover">
-        <img src="tiles.jpg" alt="Tiles Calculator banner" />
+        <img src={tilesCalculatorBanner} alt="Tiles Calculator banner" />
       </div>
       <div className="container">
-        <h1>Tile Estimator</h1>
+        <h1>Tiles Estimator</h1>
 
         <label>Wall/Floor Length (ft):</label>
         <input

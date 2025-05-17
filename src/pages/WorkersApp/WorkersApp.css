@@ -1,0 +1,30 @@
+.workers-app {
+  margin: 20px;
+  font-family: "Carter One", serif;
+}
+h2.worker-header {
+  color: red;
+}
+.worker-wrapper {
+  margin: 10px;
+  padding: 10px;
+}
+
+.worker-option {
+  padding: 10px;
+  padding-inline: 15px;
+  margin-bottom: 10px;
+  background: dodgerblue;
+  color: #fff;
+  border-radius: 15px;
+  font-size: 17pt;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.worker-option a {
+  text-decoration: none;
+  color: #fff;
+}

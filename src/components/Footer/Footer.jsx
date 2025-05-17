@@ -1,4 +1,5 @@
 import './footer.css'
+import packageJson from '../../../package.json'; // adjust path if needed
 
 function Footer() {
   return (
@@ -10,6 +11,7 @@ function Footer() {
       <p><strong>Connect</strong></p>
       <p>+91 7682020188</p>
       <p>baatdekha@gmail.com</p>
+      <p className="version">version: {packageJson.version}</p>
     </footer>
   )
 }

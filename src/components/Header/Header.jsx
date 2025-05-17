@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import banner from '../assets/baatdekha.png'
+import banner from './baatdekha.png'
 import './header.css'
 
 function Header({ isMenuOpen, setIsMenuOpen, buttonRef }) {
