@@ -22,9 +22,9 @@ h2.worker-header {
   flex-direction: row;
   align-items: center;
   gap: 15px;
+  transition: color .3s ease;
 }
 
-.worker-option a {
-  text-decoration: none;
-  color: #fff;
+.worker-option:hover {
+  color: yellow;
 }
