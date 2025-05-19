@@ -1,4 +1,4 @@
-import './radioToolbar.css'
+import './radioToolbar.module.css'
 
 function OccupationFilter({ occupations, selected, onChange }) {
   return (

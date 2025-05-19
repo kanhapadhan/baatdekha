@@ -1,0 +1,65 @@
+.radio-toolbar {
+  outline: 0px solid #ccc;
+  border-radius: 5px;
+  padding: 0 30px;
+  padding-top: 10px;
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.radio-toolbar span.icon {
+  background-color: #d7dbf4;
+  padding: 8px 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio-toolbar span.icon span {
+  padding: 5px;
+}
+
+.radio-toolbar input[type="radio"] {
+  display: none;
+}
+
+.radio-toolbar input[type="radio"]:checked+span {
+  background-color: #368ce7;
+  color: #fff;
+}
+
+.radio-toolbar label:hover span {
+  transition: transform 0.2s;
+  transform: scale(1);
+  animation: anim .15s ease-in;
+}
+
+@keyframes reveal {
+  from {
+    translate: 0 50px;
+    opacity: 0;
+  }
+  to {
+    translate: 0 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes anim {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}

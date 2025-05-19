@@ -11,6 +11,7 @@ import TilesCalculator from './pages/TilesCalculator/TilesCalculator';
 import PaintsMaker from './pages/PaintsMaker/PaintsMaker';
 import Tnc from './pages/Tnc/Tnc';
 import ShopTogether from './pages/ShopTogether/ShopTogether';
+import VehicleReservation from './pages/VehicleReservation/VehicleReservation';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         </Route>
         <Route path="tiles-calculator" element={<TilesCalculator />} />
         <Route path="paints-maker" element={<PaintsMaker />} />
+        <Route path="vehicle-reservation" element={<VehicleReservation />} />
         
       </Routes>
     </Router>
