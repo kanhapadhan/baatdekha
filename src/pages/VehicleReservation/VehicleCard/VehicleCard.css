@@ -7,6 +7,7 @@
   grid-template-columns: 60px 1fr 50px;
   align-items: center;
   padding: 10px;
+  font-family: "Poppins";
  /* opacity: 0;
   animation: reveal .6s cubic-bezier(0.68, -0.55, 0.265, 1.25);*/
 }

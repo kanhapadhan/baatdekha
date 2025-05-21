@@ -2,6 +2,9 @@
   box-sizing: border-box;
 }
 
+.vehicle-reservation {
+  font-family: "Poppins";
+}
 header {
   margin: 0;
 }

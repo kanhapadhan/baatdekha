@@ -1,7 +1,7 @@
 // VehicleReservation.jsx 
 import React, { useEffect, useState } from 'react'; 
 import VehicleFilter from './VehicleFilter/VehicleFilter'; 
-import VehicleCard from './VehicleCard';
+import VehicleCard from './VehicleCard/VehicleCard';
 import './VehicleReservation.css'
 
 import AutoIcon from './assets/auto-rickshaw.svg?react';
@@ -45,7 +45,7 @@ const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=
     const filteredVehicles = vehiclesData.filter(v => v.vehicleType.toLowerCase() === selectedVehicle);
     
     return (
-      <div> 
+      <div className="vehicle-reservation" > 
         <header> 
           <h2>Vehicle Reservation</h2> 
           <VehicleFilter selectedVehicle={selectedVehicle} setSelectedVehicle={setSelectedVehicle} />

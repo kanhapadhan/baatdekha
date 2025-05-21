@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import WorkerCard from './WorkerCard';
-import OccupationFilter from './OccupationFilter';
+//import OccupationFilter from './OccupationFilter';
 import './workersFinder.css'
+import RadioToolbar from '../../../components/RadioToolbar/RadioToolbar'
 
 function WorkersFinder() {
   const [workers, setWorkers] = useState([]);
@@ -51,15 +52,18 @@ function WorkersFinder() {
       setFiltered(workers.filter(w => w.occupation === selectedOccupation));
     }
   }, [selectedOccupation, workers]);
-
+  const objectArray = ['all', ...occupations].map(item => ({ name: item, label: item }));
+  
   return (
     <div className="worker-finder">
       <h3><span>Plumber || Welder || Electrician || Painter || Mason || Labor || Carpainter || Driver || Interior designer || Building contractor</span></h3>
       <div id="filter-container">
         <label>🔴 Filter by Occupation:</label>
-      <OccupationFilter
-        occupations={occupations}
-        selected={selectedOccupation}
+      <RadioToolbar
+        className="occupation-filter"
+        name="occupations"
+        options={['all', ...occupations].map(item => ({ value: item, label: item }))}
+        selectedValue={selectedOccupation}
         onChange={setSelectedOccupation}
       />
       </div>

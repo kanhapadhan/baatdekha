@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './tilesCalculator.css'; // Move your CSS into this file
+import './TilesCalculator.css';
 import tilesCalculatorBanner from './tiles.jpg'
 
 export default function TilesCalculator() {
@@ -37,10 +37,11 @@ export default function TilesCalculator() {
         <img src={tilesCalculatorBanner} alt="Tiles Calculator banner" />
       </div>
       <div className="container">
-        <h1>Tiles Estimator</h1>
+        <h1 className="title">Tiles Estimator</h1>
 
-        <label>Wall/Floor Length (ft):</label>
+        <label className="input-label" >Wall/Floor Length (ft):</label>
         <input
+          className="number-input"
           type="number"
           value={length}
           onChange={(e) => setLength(e.target.value)}
@@ -48,8 +49,9 @@ export default function TilesCalculator() {
           required
         />
 
-        <label>Wall/Floor Width (ft):</label>
+        <label className="input-label">Wall/Floor Width (ft):</label>
         <input
+          className="number-input"
           type="number"
           value={width}
           onChange={(e) => setWidth(e.target.value)}
@@ -57,8 +59,8 @@ export default function TilesCalculator() {
           required
         />
 
-        <label>Select Tile Size:</label>
-        <select value={tileSize} onChange={(e) => setTileSize(e.target.value)}>
+        <label className="input-label">Select Tile Size:</label>
+        <select className="tile-size-select" value={tileSize} onChange={(e) => setTileSize(e.target.value)}>
           <option value="12x8,12">12" x 8"</option>
           <option value="10x15,8">10" x 15"</option>
           <option value="12x12,10">12" x 12"</option>
@@ -68,14 +70,14 @@ export default function TilesCalculator() {
           <option value="24x48,2">24" x 48"</option>
         </select>
 
-        <button onClick={calculateTiles}>Calculate</button>
+        <button id="calculate-btn" onClick={calculateTiles}>Calculate</button>
         <hr />
 
         <div className="result">
           {results ? `Results` : 'Results'}
         </div>
 
-        <table>
+        <table className="result-table" >
           <tbody>
             <tr>
               <th>Total Area</th>

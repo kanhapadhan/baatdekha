@@ -26,7 +26,7 @@
 }
 
 .radio-toolbar span.icon span {
-  padding: 5px;
+  
 }
 
 .radio-toolbar input[type="radio"] {
@@ -41,7 +41,7 @@
 .radio-toolbar label:hover span {
   transition: transform 0.2s;
   transform: scale(1);
-  animation: anim .15s ease-in;
+  animation: anim .1s ease-in;
 }
 
 @keyframes reveal {

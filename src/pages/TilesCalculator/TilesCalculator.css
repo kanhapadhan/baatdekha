@@ -26,28 +26,28 @@
 }
 
 @media (max-width: 768px) {
-    .tilesCalculator img {
+    img {
         width: 70vw;
     }
 }
 
-.tilesCalculator .container {
+.container {
     width: 100%;
     padding: 30px;
 }
-.tilesCalculator h1 {
+h1.title {
     text-align: center;
     color: #333;
 }
 
-.tilesCalculator label {
+.input-label {
     display: block;
     margin: 10px 0 5px;
     font-weight: bold;
     color: #555;
 }
 
-.tilesCalculator :is(input, select, button) {
+:is(.number-input, .tile-size-select, #calculate-btn) {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -55,15 +55,15 @@
     border-radius: 10px;
     font-size: 16px;
 }
-.tilesCalculator :is(input,select) {
+:is(.number-input,.tile-size-select) {
     background: #fff;
     color: #000;
 }
-.tilesCalculator select {
+.tile-size-select {
     font-weight: bold;
 }
 
-.tilesCalculator button {
+#calculate-btn {
     background-color: #4caf50;
     color: white;
     font-weight: bold;
@@ -71,11 +71,11 @@
     border: none;
 }
 
-.tilesCalculator button:hover {
+#calculate-btn:hover {
     background-color: #45a049;
 }
 
-.tilesCalculator .result {
+.result {
     background: #deffce;
     font-weight: bold;
     text-align: center;
@@ -86,36 +86,36 @@
     margin: 5px 0;
 }
 
-.tilesCalculator table {
+.result-table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.tilesCalculator :is(table, td, th) {
+:is(.result-table, td, th) {
     border: 1px solid #eee;
     padding: 8px;
 }
 
-.tilesCalculator table th {
+.result-table th {
     text-align: left;
     width: 50%;
     font-size: 15pt;
     color: #497ccc;
 }
 
-.tilesCalculator table td {
+.result-table td {
     font-size: 14pt;
     font-weight: 500;
 }
 
-.tilesCalculator input[type="number"]:invalid {
+.number-input:invalid {
     border-color: orangered;
 }
 
-.tilesCalculator input[type="number"]:focus {
+.number-input:focus {
     border-color: #4caf50;
 }
 
-.tilesCalculator select:focus {
+.tile-size-select:focus {
     border-color: #4caf50;
 }
