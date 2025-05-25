@@ -57,6 +57,13 @@ function WorkersFinder() {
   return (
     <div className="worker-finder">
       <h3><span>Plumber || Welder || Electrician || Painter || Mason || Labor || Carpainter || Driver || Interior designer || Building contractor</span></h3>
+      <div className="registration-container" >
+        <div>
+          <span>If you are a worker, </span>
+          <span>then Register now.</span>
+        </div>
+        <a href="https://forms.gle/PFtPoFPWoeNKJi167" className="register-btn">Click Here</a>
+      </div>
       <div id="filter-container">
         <label>🔴 Filter by Occupation:</label>
       <RadioToolbar

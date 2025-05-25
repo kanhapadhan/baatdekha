@@ -26,10 +26,10 @@ function App() {
           <Route path="workers-app" element={<WorkersApp />} />
           <Route path="workers-finder" element={<WorkersFinder />} />
           <Route path="shop-together" element={<ShopTogether />} />
+         <Route path="vehicle-reservation" element={<VehicleReservation />} />
         </Route>
         <Route path="tiles-calculator" element={<TilesCalculator />} />
         <Route path="paints-maker" element={<PaintsMaker />} />
-        <Route path="vehicle-reservation" element={<VehicleReservation />} />
         
       </Routes>
     </Router>

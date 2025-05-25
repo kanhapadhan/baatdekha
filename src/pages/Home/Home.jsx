@@ -4,7 +4,7 @@ import paintsMakerImg from "./paints-maker.jpg";
 import tilesCalcImg from "./tiles-calculator.jpg";
 import workersFinderImg from "./workers-finder.jpeg";
 import shoppingImg from "./shopping-in-raghunathpali.jpeg";
-import vehicleReservationImg from "./vehicle-reservation.png";
+import vehicleReservationImg from "./vehicle-reservation.jpg";
 
 function Home() {
   return (

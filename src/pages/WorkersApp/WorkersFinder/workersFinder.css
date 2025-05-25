@@ -17,6 +17,43 @@
   font-size: 12pt;
 }
 
+.registration-container {
+  margin: 30px;
+  padding: 20px;
+  background: linear-gradient(to bottom, #000, #ddd);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+
+.registration-container span {
+  margin: 0;
+  background: linear-gradient(to bottom,#ffde59, #ff914d);
+  padding: 0;
+  color: transparent;
+  background-clip: text;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.register-btn {
+  padding: 10px;
+  border-radius: 10px;
+  background: #ee7209;
+  color: #fff;
+  font-size: inherit;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: "Kavoon", serif;
+  font-size: 18px;
+}
+
+.register-btn:hover {
+  color: yellow;
+}
 
 
 .card-container {
