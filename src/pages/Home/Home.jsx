@@ -16,28 +16,30 @@ function Home() {
         label="Choose a perfect paint and know the price."
       />
       <Card
-        link="/workers-app"
+        link="/workers-finder"
         imgSrc={workersFinderImg}
         alt="workers-app"
         label="You can find any types of worker in this section."
       />
+      {/*
       <Card
         link="/tiles-calculator"
         imgSrc={tilesCalcImg}
         alt="tiles-calculator"
         label="Calculate with accuracy and save your money smartly."
       />
-      <Card
-        link="/shop-together"
-        imgSrc={shoppingImg}
-        alt="shopping-in-raghunathpali"
-        label="Shopping in your local area."
-      />
+      */}
       <Card
         link="/vehicle-reservation"
         imgSrc={vehicleReservationImg}
         alt="vehicle-reservation"
         label="Vehicle Reservation"
+      />
+      <Card
+        link="/shop-together"
+        imgSrc={shoppingImg}
+        alt="shopping-in-raghunathpali"
+        label="Shopping in your local area."
       />
     </section>
   );

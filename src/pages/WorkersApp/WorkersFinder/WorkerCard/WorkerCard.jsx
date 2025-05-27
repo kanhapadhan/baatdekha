@@ -9,6 +9,7 @@ function WorkerCard({ name, village, occupation, contact, imgSrc }) {
           src={imgSrc}
           alt="Worker"
           className="worker-image"
+          loading="lazy"
           onError={(e) => { e.target.src = 'avatar.jpg'; }}
         />
       </div>

@@ -69,7 +69,7 @@ const VehicleFilter = ({ selectedVehicle, setSelectedVehicle }) => {
         onChange={setSelectedCategory}
       />
 
-      <label>Filter:</label>
+      <label>Filter Vehicles:</label>
       <RadioToolbar
         name="vehicle-filter"
         options={currentOptions}

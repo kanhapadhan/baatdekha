@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import VehicleFilter from './VehicleFilter/VehicleFilter'; 
 import VehicleCard from './VehicleCard/VehicleCard';
 import './VehicleReservation.css'
+import Spinner from './Spinner/Spinner'
 
 import AutoIcon from './assets/auto-rickshaw.svg?react';
 import BoleroIcon from './assets/bolero.svg?react';
@@ -28,6 +29,7 @@ const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=
   const VehicleReservation = () => {
     const [vehiclesData, setVehiclesData] = useState([]);
     const [selectedVehicle, setSelectedVehicle] = useState('auto');
+    const [loading, setLoading] = useState(true);
     
     useEffect(() => {
       const fetchCSVData = async () => {
@@ -37,7 +39,11 @@ const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=
           const rows = csv.split('\n').map(row => row.split(',').map(cell => cell.replace(/^"|"$/g, '').trim()));
           const data = rows.slice(1).map(([slNo, name, village, vehicleType, contact]) => ({ name, village, vehicleType, contact }));
           setVehiclesData(data);
-        } catch (error) { console.error('Error fetching CSV:', error); }
+        } catch (error) {
+          console.error('Error fetching CSV:', error);
+        } finally {
+          setLoading(false); // Always runs after try/catch
+        }
       };
       fetchCSVData();
     }, []);
@@ -45,25 +51,34 @@ const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=
     const filteredVehicles = vehiclesData.filter(v => v.vehicleType.toLowerCase() === selectedVehicle);
     
     return (
-      <div className="vehicle-reservation" > 
-        <header> 
-          <h2>Vehicle Reservation</h2> 
+      <div className="vehicle-reservation">
+        <header>
+          <h2>Vehicle Reservation</h2>
           <VehicleFilter selectedVehicle={selectedVehicle} setSelectedVehicle={setSelectedVehicle} />
-        </header> 
-        <main className="cards-wrapper"> 
-          {filteredVehicles.map((vehicle, i) => {
-            const iconData = vehicleTypeIcons[vehicle.vehicleType.toLowerCase()] || {};
-            return (
-              <VehicleCard
-                key={i}
-                name={vehicle.name}
-                village={vehicle.vehicleType}
-                contact={vehicle.contact}
-                Icon={iconData}
-              />
-            );
-          })}
-        </main> 
+        </header>
+    
+        {loading ? (
+          <Spinner/>
+        ) : (
+          <main className="cards-wrapper">
+            {filteredVehicles.length === 0 ? (
+              <div className="no-data">No data available for this vehicle type.</div>
+            ) : (
+              filteredVehicles.map((vehicle, i) => {
+                const iconData = vehicleTypeIcons[vehicle.vehicleType.toLowerCase()] || {};
+                return (
+                  <VehicleCard
+                    key={i}
+                    name={vehicle.name}
+                    village={vehicle.village}
+                    contact={vehicle.contact}
+                    Icon={iconData}
+                  />
+                );
+              })
+            )}
+          </main>
+        )}
       </div>
     );
   };

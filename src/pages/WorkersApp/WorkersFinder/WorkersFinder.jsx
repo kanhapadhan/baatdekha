@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import WorkerCard from './WorkerCard';
+import WorkerCard from './WorkerCard/WorkerCard';
 //import OccupationFilter from './OccupationFilter';
 import './workersFinder.css'
 import RadioToolbar from '../../../components/RadioToolbar/RadioToolbar'
