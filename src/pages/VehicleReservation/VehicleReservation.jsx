@@ -54,6 +54,13 @@ const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=
       <div className="vehicle-reservation">
         <header>
           <h2>Vehicle Reservation</h2>
+          <div className="registration-container" >
+            <div>
+              <span>Are you a vehicle owner?</span>
+              <span>then Register now.</span>
+            </div>
+            <a href="https://forms.gle/x9jJwcLCxu6KYRN36" className="register-btn">Click Here</a>
+          </div>      
           <VehicleFilter selectedVehicle={selectedVehicle} setSelectedVehicle={setSelectedVehicle} />
         </header>
     

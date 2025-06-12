@@ -18,7 +18,7 @@
   font-size: 12pt;
 }
 
-.registration-container {
+.worker-finder .registration-container {
   margin: 30px;
   padding: 20px;
   background: linear-gradient(to bottom, #000, #ddd);
@@ -29,7 +29,7 @@
   max-width: 500px;
 }
 
-.registration-container span {
+.worker-finder .registration-container span {
   margin: 0;
   background: linear-gradient(to bottom,#ffde59, #ff914d);
   padding: 0;
@@ -40,7 +40,7 @@
   font-size: 20px;
 }
 
-.register-btn {
+.worker-finder .register-btn {
   padding: 10px;
   border-radius: 10px;
   background: #ee7209;

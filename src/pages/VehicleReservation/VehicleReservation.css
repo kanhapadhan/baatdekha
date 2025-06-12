@@ -24,3 +24,35 @@ header h2, .cards-wrapper {
   font-weight: 500;
   text-align: center;
 }
+
+.vehicle-reservation .registration-container {
+  margin: 30px;
+  padding: 20px;
+  background: linear-gradient(to bottom right, hsla(213.7,85.3%,62.7%, 0.5), hsla(156.7,85.3%,62.7%,0.5));
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+
+.vehicle-reservation .registration-container span {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.vehicle-reservation .register-btn {
+  padding: 10px;
+  border-radius: 10px;
+  background: hsla(240,80%,50%,0.5);
+  color: #fff;
+  font-size: inherit;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+}
