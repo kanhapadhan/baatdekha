@@ -11,6 +11,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+
       - name: Install Dependencies and Build
         run: |
           npm ci
@@ -22,3 +23,4 @@ jobs:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PEACEFUL_SURGE_406508 }}
           projectId: peaceful-surge-406508
+          channelId: live
